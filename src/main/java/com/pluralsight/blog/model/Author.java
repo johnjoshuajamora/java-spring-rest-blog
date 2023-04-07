@@ -10,6 +10,7 @@ import java.util.List;
 
 @Entity
 public class Author {
+    @Version private Long version;
     public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
